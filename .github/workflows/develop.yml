@@ -9,6 +9,6 @@ jobs:
   CallReusablePipeline:
     uses: fablicio/pipeline-templates/.github/workflows/reusable-pipeline.yml@main
     with:
-      docker_username: ${{ secrets.DOCKER_USERNAME }}
-      docker_password: ${{ secrets.DOCKER_PASSWORD }}
+      docker_username: ${{ vars.DOCKER_USERNAME }}
+      docker_password: ${{ vars.DOCKER_PASSWORD }}
       image_name: "fabliciosoares/myapp"
