@@ -1,14 +1,14 @@
 name: MyApp
+
 on:
   push:
     branches:
       - develop
 
 jobs:
-  CallTemplate:
-    uses: fablicio/pipeline-templates/tree/master/.github/workflows/develop.yml@main
+  CallReusablePipeline:
+    uses: fablicio/pipeline-templates/.github/workflows/reusable-pipeline.yml@main
     with:
-      project: "name"
-      dockerfile: "dockerfilename"
-      environment: "dev"
-    secrets: inherit
+      docker_username: ${{ vars.DOCKER_USERNAME }}
+      docker_password: ${{ vars.DOCKER_PASSWORD }}
+      image_name: "fabliciosoares/myapp"
