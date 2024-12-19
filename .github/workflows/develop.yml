@@ -1,0 +1,14 @@
+name: MyApp
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  CallTemplate:
+    uses: fablicio/pipeline-templates/tree/master/.github/workflows/develop.yml@main
+    with:
+      project: "name"
+      dockerfile: "dockerfilename"
+      environment: "dev"
+    secrets: inherit
