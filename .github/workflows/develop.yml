@@ -6,11 +6,9 @@ on:
       - develop
 
 jobs:
-  CallReusablePipeline:
+    CallReusablePipeline:
     uses: fablicio/pipeline-templates/.github/workflows/reusable-pipeline.yml@main
     with:
+      docker_username: ${{ vars.DOCKER_USERNAME }}
+      docker_password: ${{ vars.DOCKER_PASSWORD }}
       image_name: "fabliciosoares/myapp"
-    secrets: inherit
-    env:
-      DOCKER_USERNAME: \${{ var.DOCKER_USERNAME }}
-      DOCKER_PASSWORD: \${{ var.DOCKER_PASSWORD }}
