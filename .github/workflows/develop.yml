@@ -11,4 +11,4 @@ jobs:
     with:
       docker_username: ${{ vars.DOCKER_USERNAME }}
       docker_password: ${{ vars.DOCKER_PASSWORD }}
-      image_name: "fabliciosoares/mya-web-app:webapp"
+      image_name: "fabliciosoares/mya-web-app"
