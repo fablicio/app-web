@@ -12,5 +12,5 @@ jobs:
       image_name: "fabliciosoares/myapp"
     secrets: inherit
     env:
-      DOCKER_USERNAME: \${{ secrets.DOCKER_USERNAME }}
-      DOCKER_PASSWORD: \${{ secrets.DOCKER_PASSWORD }}
+      DOCKER_USERNAME: \${{ var.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: \${{ var.DOCKER_PASSWORD }}
