@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-    CallReusablePipeline:
+  CallReusablePipeline:
     uses: fablicio/pipeline-templates/.github/workflows/reusable-pipeline.yml@main
     with:
       docker_username: ${{ vars.DOCKER_USERNAME }}
