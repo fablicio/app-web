@@ -6,7 +6,7 @@ aplicação web
 Projeto teste para estudo e evolução assim como documentação!
 
 
-##Imagem Docker
+## Imagem Docker
 realizado o build e push para o DockerHub.
 
 ##Git-Runner
