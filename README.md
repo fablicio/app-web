@@ -15,5 +15,10 @@ instalado e configurado como self-hosted.
 ## Workflow 
 Utilizando para automatizar tarefas em todo o ciclo de vida do software.
 
+## Reusing workflows
+Vamos utilizar fluxos de trabalho evita duplicação, podendo então chamar o fluxo de trabalho reutilizável de outro fluxo de trabalho.
+
+
+
 
 
