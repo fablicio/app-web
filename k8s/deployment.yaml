@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: mynginx:local
-        imagePullPolicy: Never
+        image: fabliciosoares/mynginx:latest  # Use seu usuário do Docker Hub
+        imagePullPolicy: Always               # Garante que ele baixe a versão nova
         ports:
         - containerPort: 80
