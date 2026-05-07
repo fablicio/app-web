@@ -5,11 +5,12 @@ on:
     branches:
       - develop
 
+# ... (início do arquivo develop.yml)
 jobs:
   CallReusablePipeline:
     uses: fablicio/pipeline-templates/.github/workflows/reusable-pipeline.yml@main
     with:
-      docker_username: ${{ secrets.DOCKER_USERNAME }}
+      docker_username: "fabliciosoares"
       image_name: "fabliciosoares/web-app"
-    secrets: # <-- ESSA SEÇÃO É OBRIGATÓRIA AQUI
-      docker_password: ${{ secrets.DOCKER_PASSWORD }}
+    secrets: # <--- ESSA LINHA É A CHAVE
+      docker_password: ${{ secrets.DOCKER_PASSWORD }} # O nome aqui deve ser o que está no seu reusable.yml
