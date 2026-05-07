@@ -1,0 +1,5 @@
+  with:
+      docker_username: ${{ secrets.DOCKER_USERNAME }}
+      image_name: "fabliciosoares/web-app"
+    secrets: # Note que a senha agora fica na seção secrets
+      docker_password: ${{ secrets.DOCKER_PASSWORD }}
